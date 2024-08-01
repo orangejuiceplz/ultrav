@@ -17,7 +17,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@mercuryworkshop/bare-mux": "^1.1.0",
-    "@mercuryworkshop/epoxy-transport": "^1.1.0",
+    "@mercuryworkshop/epoxy-transport": "^2.1.5",
     "@titaniumnetwork-dev/ultraviolet": "^3.1.2",
     "express": "^4.18.2",
     "ultraviolet-static": "file:Ultraviolet-Static",

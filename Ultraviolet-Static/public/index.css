@@ -7,10 +7,23 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  animation: backgroundPulse 10s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 .fa-magnifying-glass {
   color: #00ffff;
+  font-size: 24px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00ffff; }
+  to { text-shadow: 0 0 20px #00ffff; }
 }
 
 .flex-center {
@@ -21,11 +34,11 @@ body {
 .header-center {
   align-items: center;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
 .left-margin {
-  margin: 0px 16px;
+  margin: 0px 20px;
 }
 
 #uv-frame {
@@ -42,10 +55,11 @@ body {
   color: #ff00ff !important;
   white-space: pre-wrap;
   text-shadow: 0 0 5px #ff00ff;
+  font-size: 18px;
 }
 
 #uv-error-code {
-  font-size: 12px;
+  font-size: 14px;
   color: #00ffff;
   font-family: "Courier New", Courier, monospace;
 }
@@ -57,15 +71,16 @@ body {
   outline: none;
   border: 1px solid #00ffff;
   border-radius: 10px;
-  padding: 16px 20px;
-  line-height: 16px;
+  padding: 18px 24px;
+  font-size: 18px;
+  line-height: 18px;
   display: none;
   transition: all 0.3s ease;
 }
 
 #uv-register-sw:active {
   background: rgba(51, 51, 51, 0.7);
-  box-shadow: 0 0 10px #00ffff;
+  box-shadow: 0 0 20px #00ffff;
 }
 
 #uv-register-sw.show {
@@ -73,19 +88,26 @@ body {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   filter: drop-shadow(0 0 10px #00ffff);
+  animation: rotateLogo 10s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }
 
 .logo-wrapper .text {
-  font-size: 75px;
+  font-size: 90px;
   color: #fff;
   text-shadow: 0 0 10px #00ffff;
 }
 
 .logo-wrapper h1 {
   color: #00ffff;
+  font-size: 48px;
 }
 
 footer {
@@ -93,10 +115,11 @@ footer {
   margin-top: auto;
   display: flex;
   flex-direction: column;
-  line-height: 30px;
+  line-height: 36px;
   margin-bottom: 20px;
   background: rgba(0, 0, 0, 0.5);
   border-top: 1px solid #00ffff;
+  padding: 20px 0;
 }
 
 footer > div {
@@ -109,10 +132,10 @@ footer > div {
 
 footer a,
 footer span {
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   color: #00ffff;
-  font-size: 15px;
+  font-size: 18px;
   transition: all 0.3s ease;
 }
 
@@ -122,48 +145,53 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
-  text-shadow: 0 0 5px #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  transform: scale(1.05);
 }
 
 .desc p {
-  width: 560px;
+  width: 600px;
   color: rgba(0, 255, 255, 0.7);
+  font-size: 18px;
 }
 
 #uv-address {
   background: rgba(0, 0, 0, 0.5);
   font-family: inherit;
-  padding: 0px 17px;
-  height: 48px;
+  padding: 0px 20px;
+  height: 54px;
   border: 1px solid #00ffff;
   color: #00ffff;
   border-radius: 50px;
   outline: none;
-  width: 350px;
-  margin-top: 5px;
+  width: 400px;
+  margin-top: 10px;
   transition: all 0.3s ease;
+  font-size: 18px;
 }
 
 #uv-address:focus {
   border: 1px solid #00ffff;
-  box-shadow: 0 0 10px #00ffff;
+  box-shadow: 0 0 20px #00ffff;
+  width: 450px;
 }
 
 .credit {
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 15px;
   display: block;
   border: #00ffff 1px solid;
   color: #00ffff;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
 }
 
 .credit label {
   margin-left: auto;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .credit a,
@@ -176,6 +204,7 @@ footer a:hover {
 .credit pre {
   display: none;
   width: 100%;
+  font-size: 14px;
 }
 
 .credit label::after {

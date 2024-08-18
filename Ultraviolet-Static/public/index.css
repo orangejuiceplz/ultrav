@@ -18,12 +18,6 @@ body {
 .fa-magnifying-glass {
   color: #00ffff;
   font-size: 24px;
-  animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-  from { text-shadow: 0 0 5px #00ffff; }
-  to { text-shadow: 0 0 20px #00ffff; }
 }
 
 .flex-center {

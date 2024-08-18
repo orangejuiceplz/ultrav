@@ -3,14 +3,14 @@
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
-  background: #111;
+  background: linear-gradient(to right, #000, #111, #000);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .fa-magnifying-glass {
-  color: white;
+  color: #00ffff;
 }
 
 .flex-center {
@@ -35,34 +35,37 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #uv-error {
-  color: #ff6666 !important;
+  color: #ff00ff !important;
   white-space: pre-wrap;
+  text-shadow: 0 0 5px #ff00ff;
 }
 
 #uv-error-code {
   font-size: 12px;
-  color: #fff;
+  color: #00ffff;
   font-family: "Courier New", Courier, monospace;
 }
 
 #uv-register-sw {
-  color: white;
-  background: #555555;
+  color: #00ffff;
+  background: rgba(85, 85, 85, 0.5);
   cursor: pointer;
   outline: none;
-  border: none;
-  border-radius: 6px;
+  border: 1px solid #00ffff;
+  border-radius: 10px;
   padding: 16px 20px;
   line-height: 16px;
   display: none;
+  transition: all 0.3s ease;
 }
 
 #uv-register-sw:active {
-  background: #333333;
+  background: rgba(51, 51, 51, 0.7);
+  box-shadow: 0 0 10px #00ffff;
 }
 
 #uv-register-sw.show {
@@ -72,15 +75,17 @@ body {
 .logo {
   width: 150px;
   height: 150px;
+  filter: drop-shadow(0 0 10px #00ffff);
 }
 
 .logo-wrapper .text {
   font-size: 75px;
   color: #fff;
+  text-shadow: 0 0 10px #00ffff;
 }
 
 .logo-wrapper h1 {
-  color: white;
+  color: #00ffff;
 }
 
 footer {
@@ -90,6 +95,8 @@ footer {
   flex-direction: column;
   line-height: 30px;
   margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid #00ffff;
 }
 
 footer > div {
@@ -104,8 +111,9 @@ footer a,
 footer span {
   margin: 0 15px;
   text-decoration: none;
-  color: #fff;
+  color: #00ffff;
   font-size: 15px;
+  transition: all 0.3s ease;
 }
 
 footer a {
@@ -114,43 +122,43 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+  text-shadow: 0 0 5px #00ffff;
 }
 
 .desc p {
   width: 560px;
-  color: rgba(253, 253, 253, 0.514);
+  color: rgba(0, 255, 255, 0.7);
 }
 
 #uv-address {
-  background: none;
+  background: rgba(0, 0, 0, 0.5);
   font-family: inherit;
   padding: 0px 17px;
   height: 48px;
-  border: 1px solid rgb(255, 255, 255, 0.2);
-  color: var(--text-color);
-  border-radius: 3px;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  border-radius: 50px;
   outline: none;
   width: 350px;
   margin-top: 5px;
-  border-radius: 50px;
-  color: #fff;
-  transition: border-radius 0.1s;
+  transition: all 0.3s ease;
 }
 
 #uv-address:focus {
-  border: 1px solid rgba(253, 253, 253, 0.514);
-  border-radius: 6px;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 10px #00ffff;
 }
 
 .credit {
   border-radius: 10px;
   padding: 10px;
   display: block;
-  border: #fff 1px solid;
-  color: #fff;
+  border: #00ffff 1px solid;
+  color: #00ffff;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 15px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .credit label {
@@ -160,7 +168,7 @@ footer a:hover {
 
 .credit a,
 .credit label {
-  color: white;
+  color: #00ffff;
   text-decoration: underline;
   text-align: right;
 }

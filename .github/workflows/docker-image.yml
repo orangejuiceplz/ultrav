@@ -9,7 +9,7 @@ on:
     - cron: "30 12 * * 0" # Run once every Sunday
 
 env:
-  REPO: ultraviolet-node
+  REPO: custom-ultraviolet
   PLATFORMS: linux/amd64,linux/arm64
 
 jobs:
@@ -24,8 +24,8 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKERUSERNAME }}
-          password: ${{ secrets.DOCKERPASSWORD }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Test Image
         uses: redhat-actions/buildah-build@v2
@@ -67,4 +67,4 @@ jobs:
         with:
           image: ${{ steps.build-image.outputs.image }}
           tags: ${{ steps.build-image.outputs.tags }}
-          registry: docker.io/${{ secrets.DOCKERUSERNAME }}
+          registry: docker.io/${{ secrets.DOCKERHUB_USERNAME }}

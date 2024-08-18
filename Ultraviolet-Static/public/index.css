@@ -18,6 +18,12 @@ body {
 .fa-magnifying-glass {
   color: #00ffff;
   font-size: 24px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00ffff; }
+  to { text-shadow: 0 0 20px #00ffff; }
 }
 
 .flex-center {
@@ -85,12 +91,6 @@ body {
   width: 180px;
   height: 180px;
   filter: drop-shadow(0 0 10px #00ffff);
-  animation: rotateLogo 10s linear infinite;
-}
-
-@keyframes rotateLogo {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
 }
 
 .logo-wrapper .text {

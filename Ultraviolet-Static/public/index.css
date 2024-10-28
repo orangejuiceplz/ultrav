@@ -213,3 +213,53 @@ footer a:hover {
 .credit input:checked ~ pre {
   display: block;
 }
+
+.motd-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+}
+
+.motd-box {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    animation: motdGlow 3s infinite alternate;
+}
+
+.motd-title {
+    color: #00ffff;
+    font-size: 22px;
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+.motd-content {
+    color: rgba(0, 255, 255, 0.9);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+@keyframes motdGlow {
+    from {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+}
+
+.motd-box:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}

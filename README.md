@@ -4,5 +4,18 @@
   </a>
 </p>
 
+to setup:
 
-                                                      ^^^^^^^^^^^^^^^^^^^^^
+1. deploy and wait for everything to work (use us region for best results)
+
+2. navigate into the console
+
+3. press enter
+
+4. type `chmod + x install.sh` and enter
+
+5. type `./install.sh` and enter
+
+6. wait
+
+7. after it passes (ignore warnings, etc) refresh main page

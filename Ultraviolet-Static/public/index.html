@@ -1,131 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled Document - Google Docs</title>
-    <meta
-      name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-    />
-    <meta
-      name="keywords"
-      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
-    <meta name="googlebot" content="index, follow, snippet" />
-    <link rel="shortcut icon" content="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="baremux/index.js" defer></script>
-    <script src="epoxy/index.js" defer></script>
+    <meta name="description" content="Access the infinite void through Ultraviolet, a powerful web proxy designed for unrestricted browsing.">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#434c5e">
+    <meta name="googlebot" content="index, follow, snippet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="index.css">
     <script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
     <script src="register-sw.js" defer></script>
     <script src="search.js" defer></script>
     <script src="index.js" defer></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Ultraviolet (Web Proxy)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I unblock sites using Ultraviolet?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if Ultraviolet is blocked or not working?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Join the Titanium Network Discord at discord.gg/unblock!"
-            }
-          }
-        ]
-      }
-    </script>
-  </head>
+    <!-- Effects Scripts -->
+    <script src="black-flash.js" defer></script>
+    <script src="void-effects.js" defer></script>
+</head>
 
-  <body>
-    <div
-      title="Ultraviolet Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Ultraviolet" />
-      <h1>the juice bar | provided by orange juice!</h1>
-    </div>
-    <div class="flex-center desc left-margin">
-      <p>
-        spin it together in under five minutes! sakuya would be proud of me
-      </p>
+<body>
+    <!-- Infinite Void Container -->
+    <div class="infinite-void-container">
+        <div class="central-void"></div>
+        <div class="void-ring"></div>
+        <div class="void-particles"></div>
+        <div class="reality-distortion"></div>
+        <div class="star-field"></div>
+        <div class="purple-rings"></div>
+        <div class="cursed-energy-overlay"></div>
     </div>
 
-    <form id="uv-form" class="flex-center">
-      <input
-        id="uv-search-engine"
-        value="https://www.google.com/search?q=%s"
-        type="hidden"
-      />
-      <input 
-        id="uv-address" 
-        type="text" 
-        placeholder="limitless technique, sakuya protects, domain expanded" 
-      />
-    </form>
-    <div class="motd-container">
-      <div class="motd-box">
-        <h3 class="motd-title">motd</h3>
-        <p class="motd-content">"The strongest there is, the strongest there was, the strongest there ever will be. I am."</p>
-      </div>
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <!-- Logo Section -->
+        <div class="logo-wrapper">
+            <img class="logo" src="uv.png" alt="Ultraviolet">
+            <h1 class="domain-text">the juice bar | provided by orange juice</h1>
+            <div class="gojo-quote">spin it together in under five minutes! sakuya would be proud of me</div>
+        </div>
+
+        <!-- Search Form -->
+        <form id="uv-form" class="search-form">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden">
+            <div class="search-container">
+                <input id="uv-address" type="text" placeholder="limitless technique, sakuya protects, domain expanded" autofocus>
+                <div class="search-border"></div>
+            </div>
+        </form>
+
+        <!-- MOTD Box -->
+        <div class="motd-box">
+            <h2 class="motd-title">MOTD</h2>
+            <p class="motd-content">"The strongest there is, the strongest there was, the strongest there ever will be. I am."</p>
+            <div class="cursed-energy-bar"></div>
+        </div>
+
+        <!-- Error Display -->
+        <div class="error-container">
+            <p id="uv-error"></p>
+            <pre id="uv-error-code"></pre>
+        </div>
+
+        <!-- Footer -->
+        <footer class="domain-footer">
+            <div class="footer-content">
+                <a href="https://github.com/titaniumnetwork-dev" class="footer-link">
+                    <span class="link-text">TN</span>
+                    <div class="link-hover-effect"></div>
+                </a>
+                <a href="https://discord.gg/unblock" class="footer-link">
+                    <span class="link-text">Discord</span>
+                    <div class="link-hover-effect"></div>
+                </a>
+                <a href="https://github.com/tomphttp" class="footer-link">
+                    <span class="link-text">TOMP</span>
+                    <div class="link-hover-effect"></div>
+                </a>
+                <a href="credits.html" class="footer-link">
+                    <span class="link-text">Credits</span>
+                    <div class="link-hover-effect"></div>
+                </a>
+            </div>
+            <div class="footer-copyright">
+                <span>orangejuceplz © TN 2023</span>
+                <div class="cursed-energy-bar"></div>
+            </div>
+        </footer>
     </div>
-    <div class="desc left-margin">
-      <p id="uv-error"></p>
-      <pre id="uv-error-code"></pre>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <div class="spinner-core"></div>
+        </div>
+        <div class="loading-text">Accessing the Infinite Void...</div>
     </div>
-    <footer>
-      <div>
-        <a
-          title="The TitaniumNetwork GitHub organization"
-          href="https://github.com/titaniumnetwork-dev"
-          >TN</a
-        >
-        <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-          >DC</a
-        >
-        <a
-          title="The TompHTTP GitHub organization"
-          href="https://github.com/tomphttp"
-          >coolguys</a
-        >
-        <a
-          title="The official deployment repository for Ultraviolet"
-          href="https://github.com/orangejuiceplz"
-          >git</a
-        >
-        <a title="License information" href="credits.html">Credits</a>
-      </div>
-      <div>
-        <span>orangejuceplz &copy; TN 2023</span>
-      </div>
-    </footer>
-    <iframe style="display: none;" id="uv-frame"></iframe>
-  </body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-ring"></div>
+        <div class="cursor-dot"></div>
+    </div>
+</body>
 </html>

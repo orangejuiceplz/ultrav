@@ -1,1 +1,0 @@
-for auto install use  only for deploying new ultraviolet static frontend

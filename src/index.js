@@ -31,6 +31,11 @@ fastify.register(fastifyStatic, {
 	decorateReply: true,
 });
 
+// Add this root route handler
+fastify.get("/", async (request, reply) => {
+	return reply.sendFile("index.html");
+});
+
 fastify.get("/uv/uv.config.js", (req, res) => {
 	return res.sendFile("uv/uv.config.js", publicPath);
 });

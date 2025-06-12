@@ -8,6 +8,7 @@
 	},
 	"scripts": {
 		"start": "node src/index.js",
+		"build": "cd Ultraviolet-Static && npm install && cd .. && npm install ./Ultraviolet-Static",
 		"format": "prettier --config .prettierrc.js --write .",
 		"lint": "eslint ./src/",
 		"lint:fix": "eslint ./src/ --fix"

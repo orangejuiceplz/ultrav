@@ -1,2 +1,8 @@
-static
-node_modules
+pnpm-lock.yaml
+README.md
+tests/
+dist/
+rewriter/
+.rslib/
+lib/rslibOutput/
+lib/temp/

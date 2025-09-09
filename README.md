@@ -1,29 +1,57 @@
-<p align="center"><img src="https://raw.githubusercontent.com/MercuryWorkshop/scramjet/main/assets/scramjet.png" height="200"></p>
+<h1 align="center">Scramjet</h1>
+<div align="center">
+  <img src="assets/scramjet.png" height="200" />
+</div>
 
-<h1 align="center">Scramjet Demo</h1>
+<div align="center">
+  <a href="https://www.npmjs.com/package/@mercuryworkshop/scramjet"><img src="https://img.shields.io/npm/v/@mercuryworkshop/scramjet.svg?maxAge=3600" alt="npm version" /></a>
+  <img src="https://img.shields.io/github/issues/MercuryWorkshop/scramjet?style=flat&color=orange" />
+  <img src="https://img.shields.io/github/stars/MercuryWorkshop/scramjet?style=flat&color=orange" />
+</div>
 
-The demo implementation of Scramjet, the most advanced web proxy.
+---
 
-Scramjet is an experimental interception based web proxy designed with security, developer friendliness, and performance in mind. This project is made to evade internet censorship and bypass arbitrary web browser restrictions.
+Scramjet is an interception-based web proxy which is the successor to Ultraviolet. It is designed with security, developer friendliness, and performance in mind. Scramjet strives to have a clean, organized codebase to improve maintainability. Scramjet is made to evade internet censorship and bypass arbitrary web browser restrictions.
 
-## Setup / Usage
+## Supported Sites
 
-Install dependencies
+Some of the popular websites that Scramjet supports include:
+
+-   [Google](https://google.com) (partial)
+-   [Youtube](https://youtube.com)
+-   [Spotify](https://spotify.com) (partial)
+-   [Discord](https://discord.com)
+-   [Reddit](https://reddit.com)
+-   [GeForce NOW](https://play.geforcenow.com/)
+-   [now.gg](https://now.gg)
+
+## Development
+
+### Dependencies
+
+-   Recent versions of `node.js` and `pnpm`
+-   `rustup`
+-   `wasm-bindgen`
+-   [Binaryen's `wasm-opt`](https://github.com/WebAssembly/binaryen)
+-   [this `wasm-snip` fork](https://github.com/r58Playz/wasm-snip)
+
+#### Building
+
+-   Clone the repository with `git clone --recursive https://github.com/MercuryWorkshop/scramjet`
+-   Install the dependencies with `pnpm i`
+-   Build the rewriter with `pnpm rewriter:build`
+-   Build Scramjet with `pnpm build`
+
+### Running Scramjet Locally
+
+You can run the Scramjet dev server with the command
+
+```sh
+pnpm dev
 ```
-pnpm install
-```
 
-Run the server
-```
-pnpm start
-```
+Scramjet should now be running at <http://localhost:1337> and should rebuild upon a file being changed (excluding the rewriter).
 
-### HTTP Transport
+## Extra documentation
 
-The example uses [EpoxyTransport](https://github.com/MercuryWorkshop/EpoxyTransport) to fetch proxied data encrypted.
-
-You may also want to use [CurlTransport](https://github.com/MercuryWorkshop/CurlTransport), a different way of fetching encrypted data.
-
-This example also now uses [wisp-js/server](https://www.npmjs.com/package/@mercuryworkshop/wisp-js) instead of the now outdated wisp-server-node. Please note that this can also be replaced with other wisp implementations like [wisp-server-python](https://github.com/MercuryWorkshop/wisp-server-python) which is highly recommend for production.
-
-See the [bare-mux](https://github.com/MercuryWorkshop/bare-mux) documentation for more information.
+There's [a page on TN's docs](https://docs.titaniumnetwork.org/proxies/scramjet) for Scramjet, which is structured more like a guide if you are an interested proxy site developer.

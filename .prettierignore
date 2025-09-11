@@ -1,8 +1,2 @@
-pnpm-lock.yaml
-README.md
-tests/
-dist/
-rewriter/
-.rslib/
-lib/rslibOutput/
-lib/temp/
+static
+node_modules
